@@ -1,7 +1,7 @@
 #include <iostream>
 //headerfiles included
 using namespace std;
-
+//main function
 int main()
 {
     int day, month, year, dayNumber;
