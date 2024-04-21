@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+     
+
+   float fahrenheit;
+   float  celsius;
+   
+   int scale;
+   cout<<"enter 1 to convert enterted temperature from farenheit to celsius and enter 2 "<<endl;
+   cin>>scale;
+   if(scale==1)
+   {
+   cout<<"Enter the temperature you want to convert from farenheit to celsius"<<endl;
+   cin>>fahrenheit;
+   celsius=(5.0/9)*(fahrenheit - 32);
+   cout<<"your entered temperature in celsius  is="<<celsius<<endl;
+   }else if(scale==2)
+   {
+   	cout<<"Enter the temperature you want to convert from celsius to fahrenheit"<<endl;
+   cin>>celsius;
+   fahrenheit=(9.0/5)* celsius + 32;
+   cout<<"your entered temperature in celsius  is="<<fahrenheit<<endl;
+   }else{
+   	cout<<"Entered wrong scale"<<endl;
+   }
+   
+    return 0;
+}
