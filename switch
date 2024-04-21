@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() 
+{
+	int button;
+	cout<<"input a character";
+	cin>>button;
+	
+
+	switch (button/100){
+	case 3:
+	cout<<"you are reaching new year"	<<(button*100)/365<<"%"<<endl;
+    break;
+    case 2:
+    cout<<"you have spend half of year"	<<(button*100)/365<<"%"<<endl;
+    break;
+    case 1:
+    cout<<"you have spend more than 100 days"<<(button*100)/365<<"%"<<endl;
+	break;
+	case 0:
+	cout<<"happy new year"	<<(button*100)/365<<"%"<<endl;
+	break;
+	default:
+	cout<<"invalid number of days"	;
+	break;
+		
+    	
+}
+	
+	return 0;
+}
