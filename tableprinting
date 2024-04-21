@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main () {
+	 int number;
+    cout << "Enter the number whose table you want: ";
+    cin >> number;
+    int maxrows; int maxcols;
+    cout << "\nEnter the number of rows you want: "; cin >> maxrows;
+    cout << "\nEnter the number of columns : "; 
+    cin >> maxcols;
+    int pos=1; //starting position
+
+    while( pos<=maxrows*maxcols )
+    {
+        for(int col=1; col<=maxcols; col++, pos++)
+        {
+            cout<< pos*number << "  ";
+        }
+        cout<<"\n";
+    }
+    
+	
+	return 0;
+}
