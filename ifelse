@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int score;
+	cin>>score;
+	
+	if(score>=90 &&  score<=100){
+		cout<<"score between 90-100";
+	}if(score>=80 &&  score<=90){
+		cout<<"score between 80-90";
+	}if(score>=70 &&  score<=80){
+		cout<<"score between 80 -70";
+	}if(score>=60 &&  score<=70){
+		cout<<"score between 70 -60";
+	}if(score>=10  &&  score<=60){
+		cout<<"lies some where between 10 and 60";
+	}
+	
+	return 0;
+}
