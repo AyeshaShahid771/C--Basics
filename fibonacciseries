@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+  int first = 0;
+  int second = 1;
+  int next;
+  int num ;
+  cout<<"enter number till you want to print fibonacci series ="<<endl;
+  cin>>num;
+  
+  
+  for (int i= 2; i<num ; i++ )	
+  {
+  	cout<<first<<endl;
+  	next= first + second;
+  	first = second;
+  	second = next;
+  	
+  }
+  
+	
+	
+	
+	
+	
+	return 0;
+}
