@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int totaldays,years,week,days;
+	 totaldays = 377;
+	years = totaldays/365;
+	cout<<years<<endl;
+	week=(totaldays%365)/7;
+	
+	cout<<week<<endl;
+	days= (totaldays%365)%7;
+	cout<<days;
+	
+	return 0;
+}
