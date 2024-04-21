@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char a[5][10];
+    string temp;
+
+    // Input names
+    for (int i = 0; i < 5; i++) {
+        cout << "enter name =";
+        cin >> a[i];
+    }
+
+    // Bubble sort based on the character at index 2
+    for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            if (a[j][2] > a[j + 1][2]) {
+                // Swap characters in a[j] and a[j + 1]
+                for (int k = 0; k < 10; k++) {
+                    temp[k] = a[j][k];
+                    a[j][k] = a[j + 1][k];
+                    a[j + 1][k] = temp[k];
+                }
+            }
+        }
+    }
+
+    // Output sorted names
+    for (int i = 0; i < 5; i++) {
+        cout << a[i] << endl;
+    }
+
+    return 0;
+}
