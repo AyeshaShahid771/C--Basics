@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	int num1,lastdigit,reverse_num =0;
+	num1 = 11711;
+	int original = num1;
+	while(num1>0)
+	{
+	
+  lastdigit=num1%10;
+   num1= num1/10;
+   reverse_num=reverse_num*10 + lastdigit;
+}
+	cout<<reverse_num;
+	if(reverse_num == original)
+	{
+	
+	cout<<"palindrom ";
+    }
+	else if (reverse_num != num1)
+	{
+	
+	cout<<"not palindrom";
+}else {
+	cout<< "default input";
+}
+	
+	return 0;
+}
